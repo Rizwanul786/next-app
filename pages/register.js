@@ -1,8 +1,8 @@
 import Link from "next/link"
 
 export default function Register(){
-    return (<>
-    <section className="h-100 gradient-form" style={{background: "lightGray"}}>
+    return (<div style={{background: "lightGray",maxHeight:'100vh',height:'100vh'}}>
+    <section className="h-100 gradient-form pt-2">
       <div className="container py-2">
         <div className="row d-flex justify-content-center align-items-center">
           <div className="col-xl-10">
@@ -13,7 +13,7 @@ export default function Register(){
                     <div className="text-center">
                       <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/lotus.webp"
                         style={{width: "185px"}} alt="logo" />
-                      <h4 className="mt-1 mb-5 pb-0">We are TIC Team</h4>
+                      <h4 className="mt-1 mb-4 pb-0">We are TIC Team</h4>
                     </div>
     
                     <form>
@@ -31,7 +31,7 @@ export default function Register(){
     
                       <div className="text-center pt-1 mb-5 pb-1">
                         <button style={{background: "linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593)",display: "block",width: "100%"}}
-                         className="btn btn-primary btn-block fa-lg mb-3" type="button">Create Account</button>
+                         className="btn btn-primary btn-block fa-lg mb-3 p-3" type="button">Create Account</button>
                          <Link className="text-muted" href="/login">
                             Sign In
                          </Link>
@@ -55,5 +55,5 @@ export default function Register(){
         </div>
       </div>
     </section>
-    </>)
+    </ div>)
     }

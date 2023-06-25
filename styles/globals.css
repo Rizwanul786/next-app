@@ -1,0 +1,68 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+} */
+
+/* body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+} */
+
+.header{
+    position: fixed;
+    width: 100%;
+    left: 0;
+    z-index: 1030;
+    display: flex;
+    box-shadow: 0 1px 4px -1px rgb(0 0 0 / 15%);
+}
+.sidebar{
+    position: fixed;
+    width: 220px;
+    left: 0;
+    z-index: 1030;
+    /* display:block; */
+    top: 50px;
+    /* box-shadow: 0 1px 4px -1px rgb(0 0 0 / 15%); */
+}
+
+@media screen and (max-width: 760px) {
+.sidebar {
+  /* visibility: hidden; */
+  width: 100%;
+  clear: both;
+  float: right; 
+  display: flex;
+  position: fixed;
+  /* margin: 10px auto 5px 20px; */
+  /* width: 10%; */
+  /* display: none; */
+  top: 28%;
+  opacity:0.9;
+  justify-content: right;
+}
+.manu_icon{
+  display: none;
+}
+menu-inline-collapsed {
+  width: 52px;
+}
+}

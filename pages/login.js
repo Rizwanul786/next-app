@@ -1,12 +1,14 @@
 import { useRouter } from 'next/router'
+import Image from 'next/image'
+
 export default function Login(){
     const router = useRouter()
     const handleLogin=()=>{
         localStorage.setItem("isAuthenticated",true);
         router.replace('/')
     }
-return (<>
-<section className="h-100 gradient-form" style={{background: "lightGray"}}>
+return (<div style={{background: "lightGray",maxHeight:'100vh',height:'100vh'}}>
+<section className="h-100 gradient-form pt-2" >
   <div className="container py-2">
     <div className="row d-flex justify-content-center align-items-center">
       <div className="col-xl-10">
@@ -15,9 +17,8 @@ return (<>
             <div className="col-lg-6">
               <div className="card-body p-md-4 mx-md-4">
                 <div className="text-center">
-                  <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/lotus.webp"
-                    style={{width: "185px"}} alt="logo" />
-                  <h4 className="mt-1 mb-5 pb-0">We are TIC Team</h4>
+                <Image style={{borderRadius:"50px"}} src='/logo.jpg' width={70} height={60} />
+                  <h4 className="mt-1 mb-4 pb-0">We are TIC Team</h4>
                 </div>
 
                 <form>
@@ -33,7 +34,7 @@ return (<>
                   <div className="text-center pt-1 mb-5 pb-1">
                     <button onClick={handleLogin}
                     style={{background: "linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593)",display: "block",width: "100%"}}
-                    className="btn btn-primary btn-block fa-lg mb-3" type="button">Login</button>
+                    className="btn btn-primary btn-block fa-lg mb-3 p-3" type="button">Login</button>
                     <a className="text-muted" href="#!">Forgot password?</a>
                   </div>
 
@@ -60,5 +61,5 @@ return (<>
     </div>
   </div>
 </section>
-</>)
+</div>)
 }
