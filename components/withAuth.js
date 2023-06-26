@@ -16,7 +16,6 @@ const withAuth = (WrappedComponent) => {
     useEffect(() => {
       try{
         isAuthenticated=localStorage.getItem('isAuthenticated')
-        console.log(isAuthenticated,typeof(isAuthenticated));
         if (isAuthenticated=="false" || isAuthenticated==="") {
           router.push('/login'); // Redirect to login page if not authenticated
         }

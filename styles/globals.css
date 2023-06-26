@@ -36,7 +36,7 @@
 }
 .sidebar{
     position: fixed;
-    width: 220px;
+    width: 200px;
     left: 0;
     z-index: 1030;
     /* display:block; */
@@ -63,6 +63,9 @@
   display: none;
 }
 menu-inline-collapsed {
-  width: 52px;
+  size: 52px;
+}
+.header{
+    padding-bottom:6px ;
 }
 }
