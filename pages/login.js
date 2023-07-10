@@ -7,20 +7,19 @@ export default function Login(){
         localStorage.setItem("isAuthenticated",true);
         router.replace('/')
     }
-return (<div style={{background: "lightGray",maxHeight:'100vh',height:'100vh'}}>
-<section className="h-100 gradient-form pt-2" >
+return (<div className="content" style={{maxHeight:'100vh',height:'100vh'}}>
+<section style={{paddingTop:"60px"}} className="h-100 gradient-form" >
   <div className="container py-2">
     <div className="row d-flex justify-content-center align-items-center">
-      <div className="col-xl-10">
-        <div className="card rounded-3 text-black">
+      <div className="col-xl-5">
+        <div className="card text-black">
           <div className="row g-0">
-            <div className="col-lg-6">
+            <div className="col-lg-12">
               <div className="card-body p-md-4 mx-md-4">
                 <div className="text-center">
                 <Image style={{borderRadius:"50px"}} src='/logo.jpg' width={70} height={60} />
                   <h4 className="mt-1 mb-4 pb-0">We are TIC Team</h4>
                 </div>
-
                 <form>
                   <div className="form-outline mb-4">
                     <input type="email" className="form-control"
@@ -45,14 +44,6 @@ return (<div style={{background: "lightGray",maxHeight:'100vh',height:'100vh'}}>
 
                 </form>
 
-              </div>
-            </div>
-            <div style={{background: "linear-gradient(to right, #ee7723, #d8362a, #dd3674, #b44592)"}} className="col-lg-6 d-flex align-items-center">
-              <div className="text-white px-3 py-3 p-md-4 mx-md-4">
-                <h4 className="mb-4">We are more than just a company</h4>
-                <p className="small mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                  exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
               </div>
             </div>
           </div>

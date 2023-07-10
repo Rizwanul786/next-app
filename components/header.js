@@ -2,18 +2,16 @@ import React from 'react';
 import Image from 'next/image';
 
 export default function Header(props) {
-    const toggleCollapsed=()=>{
-        props.handlePress()
-    }
         return (
             <div className="header">
-                <div style={{marginLeft:"18px",marginTop:"8px",display:"flex"}}>
-                    <Image style={{borderRadius:"50px"}} src='/logo.jpg' alt="img" width={34} height={34} />
-                </div>
-                <div className="manu_icon"
-                     style={{ marginTop: 12,marginBottom:12,marginLeft:30}}
-                >
-                    <i onClick={toggleCollapsed} style={{color:"#001529",fontSize:"22px",cursor:"pointer"}} className="fas fa-bars" />
+                <div className="row">
+                <div className="col-lg-1"></div>
+                    <div style={{marginTop:"8px"}}  className="col-lg-9 pl-2 col-sm-4 col-xm-4">
+                        <h3>LIT-ADMIN</h3>
+                    </div>
+                    <div style={{marginTop:"15px"}} className="col-lg-2 col-sm-7 col-xm-7 text-center">
+                        <span>Rizwanul Haque</span>
+                    </div>
                 </div>
             </div>
         )
